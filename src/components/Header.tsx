@@ -11,10 +11,10 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => (
   <header
     style={{
       display: 'flex',
-      background: '#653d4a',
+      background: '#ffef7e',
       marginBottom: '1.45rem',
       margin: '0 auto',
-      padding: '1rem 1.0875rem',
+      padding: '1.5rem 2rem',
       alignItems: 'center'
     }}
   >
@@ -22,7 +22,7 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => (
       <Link
         to='/'
         style={{
-          color: 'white',
+          color: '#1f5157',
           textDecoration: 'none'
         }}
       >

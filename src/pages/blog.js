@@ -1,6 +1,6 @@
 import * as React from 'react';
-import background from '../images/green.jpg';
 import Layout from '../components/Layout';
+import background from '../images/green.jpg';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
@@ -14,18 +14,20 @@ const pageStyles = {
   margin: 0
 };
 
-const paragraphStyles = {
-  marginBottom: 48
+const linkStyles = {
+  color: 'white'
 };
 
-const IndexPage = () => {
+const BlogPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-        <p style={paragraphStyles}>Tartalom feltöltése folyamatban...</p>
+        <a style={linkStyles} href='https://csabaeszter.wordpress.com/'>
+          Blog
+        </a>
       </main>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default BlogPage;

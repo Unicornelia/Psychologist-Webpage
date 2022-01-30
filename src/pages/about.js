@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import background from '../images/paint.jpg';
+import background from '../images/green.jpg';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,

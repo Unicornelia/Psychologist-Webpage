@@ -13,7 +13,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
       <Header siteTitle='Csaba Eszter pszichológus' />
       <div
         style={{
-          margin: `0 auto`
+          margin: '0 auto'
         }}
       >
         <main>{children}</main>

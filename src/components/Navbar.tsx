@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 const Navbar = () => {
-  const navMenuItems = ['Home', 'About', 'Blog', 'Contact'];
+  const navMenuItems = ['Home', 'About', 'Blog', 'Contact', 'Expertise'];
 
   const navMenuListTag = navMenuItems.map(item => {
     let pageLink = '';
@@ -10,8 +10,6 @@ const Navbar = () => {
       pageLink = '/';
     } else if (item === 'About') {
       pageLink = '/about/';
-    } else if (item === 'Blog') {
-      pageLink = '/blog/';
     } else {
       pageLink = `/${item.toLowerCase()}/`;
     }
