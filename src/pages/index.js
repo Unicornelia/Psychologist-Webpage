@@ -10,7 +10,6 @@ const pageStyles = {
   fontSize: 16,
   fontWeight: 600,
   padding: 40,
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
   height: '100vh',
   margin: 0
 };
