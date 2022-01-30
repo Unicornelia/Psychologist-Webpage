@@ -17,21 +17,23 @@ const Navbar = () => {
     }
 
     return (
-      <li key={pageLink}>
-        <Link style={{ boxShadow: 'none', textDecoration: 'none', color: 'white' }} to={pageLink}>
-          {item}
-        </Link>
+      <li
+        key={pageLink}
+        style={{
+          display: 'flex',
+          justifyContent: 'space-around',
+          textDecoration: 'none',
+          color: 'white',
+          listStyleType: 'none',
+          padding: '0 20px'
+        }}
+      >
+        <Link to={pageLink}>{item}</Link>
       </li>
     );
   });
 
-  return (
-    <nav>
-      <div>
-        <ul>{navMenuListTag}</ul>
-      </div>
-    </nav>
-  );
+  return <ul style={{ display: 'flex', color: 'white' }}>{navMenuListTag}</ul>;
 };
 
 export default Navbar;
