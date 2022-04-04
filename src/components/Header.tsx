@@ -11,11 +11,12 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => (
   <header
     style={{
       display: 'flex',
-      background: '#ffef7e',
+      background: '#c1efe2',
       marginBottom: '1.45rem',
       margin: '0 auto',
       padding: '1.5rem 2rem',
-      alignItems: 'center'
+      alignItems: 'center',
+      justifyContent: 'space-between'
     }}
   >
     <h1 style={{ margin: 0 }}>

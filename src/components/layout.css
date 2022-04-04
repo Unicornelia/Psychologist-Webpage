@@ -1,7 +1,9 @@
 body {
+    margin: 0;
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: Nunito,"Roboto Light", serif;
-    font-weight: normal;
+    font-size: 18px;
+    font-family: Helvetica,"Roboto Light", serif;
+    font-weight: lighter;
     word-wrap: break-word;
     font-kerning: normal;
 }

@@ -1,12 +1,13 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import background from '../images/green.jpg';
+import background from '../images/pastelshapes2.jpg';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  color: 'white',
+  color: 'black',
+  textShadow: 'blue',
   fontSize: 16,
   fontWeight: 600,
   padding: 40,
@@ -15,16 +16,33 @@ const pageStyles = {
 };
 
 const linkStyles = {
-  color: 'white'
+  margin: '0 0 0 5px',
+  background: 'rgba(255, 255, 255, 0.5)',
+  '-moz-box-shadow': '0 0 0 5px rgba(255, 255, 255, 0.5)',
+  '-webkit-box-shadow': '0 0 0 5px rgba(255, 255, 255, 0.5)',
+  boxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)',
+  color: 'black'
 };
 
 const BlogPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-        <a style={linkStyles} href='https://csabaeszter.wordpress.com/'>
-          Blog
-        </a>
+        <p>
+          <a
+            target='_blank'
+            style={linkStyles}
+            href='https://csabaeszter.wordpress.com/'
+            rel='noreferrer'
+          >
+            Blog megtekintése eredeti oldalon
+          </a>
+        </p>
+        <iframe
+          style={{ width: '100%', height: '90vh' }}
+          title='blog'
+          src='https://csabaeszter.wordpress.com/'
+        />
       </main>
     </Layout>
   );
