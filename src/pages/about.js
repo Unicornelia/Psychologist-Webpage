@@ -7,8 +7,6 @@ const pageStyles = {
   backgroundImage: `url(${background})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  color: 'black',
-  fontSize: 18,
   fontWeight: 500,
   padding: 30,
   height: '100%',

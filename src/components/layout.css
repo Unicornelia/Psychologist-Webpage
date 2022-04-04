@@ -1,9 +1,21 @@
 body {
-    margin: 0;
-    color: hsla(0, 0%, 0%, 0.8);
-    font-size: 18px;
-    font-family: Helvetica,"Roboto Light", serif;
-    font-weight: lighter;
-    word-wrap: break-word;
-    font-kerning: normal;
+  margin: 0;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-size: 18px;
+  font-family: Helvetica, 'Roboto Light', serif;
+  font-weight: lighter;
+  word-wrap: break-word;
+  font-kerning: normal;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  z-index: 2;
+  color: hsl(187, 55%, 19%);
+  text-shadow: -1px 0 1px hsl(180, 64%, 77%), 1px 0 1px rgba(0, 0, 0, 0.8);
+  transform: rotateY(-30deg);
+}
+

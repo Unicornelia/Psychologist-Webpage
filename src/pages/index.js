@@ -1,16 +1,15 @@
 import * as React from 'react';
 import background from '../images/pastelshapes2.jpg';
 import Layout from '../components/Layout';
+import therapy from '../images/therapy2.jpg';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  color: 'black',
-  fontSize: 16,
   fontWeight: 600,
   padding: 30,
-  height: '100vh',
+  height: '100%',
   margin: 0
 };
 
@@ -46,6 +45,11 @@ const IndexPage = () => {
           </p>
           Vallom, hogy minden kérdés jó, fontos és számít. Ezért kérem, írjon bátran üzenetet!
         </article>
+        <img
+          style={{ border: '1px solid grey', display: 'flex', margin: '0 auto', maxWidth: '50%' }}
+          src={therapy}
+          alt='therapy'
+        />
       </main>
     </Layout>
   );

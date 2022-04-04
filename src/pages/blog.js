@@ -6,10 +6,6 @@ const pageStyles = {
   backgroundImage: `url(${background})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  color: 'black',
-  textShadow: 'blue',
-  fontSize: 16,
-  fontWeight: 600,
   padding: 40,
   height: '100vh',
   margin: 0
@@ -20,8 +16,7 @@ const linkStyles = {
   background: 'rgba(255, 255, 255, 0.5)',
   '-moz-box-shadow': '0 0 0 5px rgba(255, 255, 255, 0.5)',
   '-webkit-box-shadow': '0 0 0 5px rgba(255, 255, 255, 0.5)',
-  boxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)',
-  color: 'black'
+  boxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)'
 };
 
 const BlogPage = () => {
