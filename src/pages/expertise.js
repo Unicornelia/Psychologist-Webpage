@@ -51,8 +51,12 @@ const ExpertisePage = () => {
               és dinamika feltérképezése, fejlesztése, konfliktusok kezelése
             </li>
           </ul>
-          Konzultációk ára: -egyéni pszichológiai konzultáció: 9000ft/50perc -páros-, vagy családi
-          pszichológiai konzultáció: 20000ft/90perc
+          <br />
+          <p>Konzultációk ára:</p>
+          <ul>
+            <li>egyéni pszichológiai konzultáció: 9000ft / 50perc</li>
+            <li>páros-, vagy családi pszichológiai konzultáció: 20000ft / 90perc</li>
+          </ul>
         </article>
       </main>
     </Layout>
