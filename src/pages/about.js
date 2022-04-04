@@ -51,7 +51,7 @@ const AboutPage = () => {
           </ul>
 
           <img
-            style={{ display: 'flex', margin: '0 auto', maxWidth: '50%' }}
+            style={{ display: 'flex', margin: '0 auto', maxWidth: '50%', border: '1px solid grey' }}
             src={profile}
             alt='profile'
           />
