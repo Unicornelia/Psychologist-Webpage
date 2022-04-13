@@ -17,7 +17,7 @@ const activeTabStyle = {
 };
 
 const Navbar = () => {
-  const navMenuItems = ['Home', 'About', 'Blog', 'Contact', 'Expertise'];
+  const navMenuItems = ['Home', 'About', 'Expertise', 'Contact', 'Blog'];
 
   const navMenuListTag = navMenuItems.map(item => {
     let pageLink = '';
@@ -35,12 +35,12 @@ const Navbar = () => {
         menuItem = 'Kezdõlap';
       } else if (item === 'About') {
         menuItem = 'Bemutatkozás';
+      } else if (item === 'Expertise') {
+        menuItem = 'Amiben segíthetek';
       } else if (item === 'Contact') {
         menuItem = 'Kapcsolat';
       } else if (item === 'Blog') {
         menuItem = 'Blog';
-      } else if (item === 'Expertise') {
-        menuItem = 'Amiben segíthetek';
       }
 
       return menuItem;
