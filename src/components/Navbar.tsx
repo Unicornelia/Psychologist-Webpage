@@ -40,7 +40,7 @@ const Navbar = () => {
       } else if (item === 'Blog') {
         menuItem = 'Blog';
       } else if (item === 'Expertise') {
-        menuItem = 'Szaktudás';
+        menuItem = 'Amiben segíthetek';
       }
 
       return menuItem;
