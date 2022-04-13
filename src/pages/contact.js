@@ -36,7 +36,7 @@ const ContactPage = () => {
           <br />
           <a href='https://www.instagram.com/csaba_eszter_pszichologus'>Instagramm</a>
           <br />
-          Konzultációk helyszíne: Budapest 7. kerület, 11. Kerület; online: google meet 💻
+          Konzultációk helyszíne: Budapest 7. kerület, 11. kerület; online: google meet 💻
         </p>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <iframe
