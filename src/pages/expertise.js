@@ -8,7 +8,7 @@ const pageStyles = {
   backgroundSize: 'cover',
   fontWeight: 500,
   padding: 40,
-  height: '100vh',
+  height: '100%',
   margin: 0
 };
 
