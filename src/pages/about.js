@@ -18,8 +18,8 @@ const articleStyles = {
   margin: 40,
   lineHeight: 1.7,
   background: 'rgba(255, 255, 255, 0.5)',
-  '-moz-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  '-webkit-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  MozBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  WebkitBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
   boxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)'
 };
 
@@ -51,7 +51,12 @@ const AboutPage = () => {
           </ul>
 
           <img
-            style={{ display: 'flex', margin: '0 auto', maxWidth: '50%', border: '1px solid grey' }}
+            style={{
+              display: 'flex',
+              margin: '0 auto',
+              maxWidth: '50vw',
+              border: '1px solid grey'
+            }}
             src={profile}
             alt='profile'
           />

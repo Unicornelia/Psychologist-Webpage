@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect } from 'react';
 import { Link } from 'gatsby';
 
 const navbarStyles = {
@@ -10,51 +11,34 @@ const navbarStyles = {
 };
 
 const Navbar = () => {
-  const navMenuItems = ['About', 'Expertise', 'Contact', 'Blog'];
+  let isSmallDevice;
 
-  const navMenuListTag = navMenuItems.map(item => {
-    let pageLink = '';
-    if (item === 'About') {
-      pageLink = '/about/';
-    } else {
-      pageLink = `/${item.toLowerCase()}/`;
-    }
-
-    let menuItem;
-    navMenuItems.map(i => {
-      if (i === 'About') {
-        menuItem = 'Bemutatkozás';
-      } else if (item === 'Expertise') {
-        menuItem = 'Amiben segíthetek';
-      } else if (item === 'Contact') {
-        menuItem = 'Kapcsolat';
-      } else if (item === 'Blog') {
-        menuItem = 'Blog';
-      }
-
-      return menuItem;
-    });
-
-    return (
-      <li key={pageLink}>
-        <Link to={pageLink} style={navbarStyles}>
-          {menuItem}
-        </Link>
-      </li>
-    );
-  });
+  useEffect(() => {
+    isSmallDevice = document.body.clientWidth < 960;
+  }, []);
 
   return (
     <ul
       style={{
-        display: 'flex',
+        display: isSmallDevice ? 'grid' : 'flex',
         alignContent: 'flex-end',
         justifyContent: 'space-around',
         listStyleType: 'none',
         padding: '0 20px'
       }}
     >
-      {navMenuListTag}
+      <Link id='about' to='/about/' style={navbarStyles}>
+        Bemutatkozás
+      </Link>
+      <Link id='expertise' to='/expertise/' style={navbarStyles}>
+        Amiben segíthetek
+      </Link>
+      <Link id='contact' to='/contact/' style={navbarStyles}>
+        Kapcsolat
+      </Link>
+      <Link id='blog' to='/blog/' style={navbarStyles}>
+        Blog
+      </Link>
     </ul>
   );
 };

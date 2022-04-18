@@ -14,8 +14,8 @@ const pageStyles = {
 const linkStyles = {
   margin: '0 0 0 5px',
   background: 'rgba(255, 255, 255, 0.5)',
-  '-moz-box-shadow': '0 0 0 5px rgba(255, 255, 255, 0.5)',
-  '-webkit-box-shadow': '0 0 0 5px rgba(255, 255, 255, 0.5)',
+  MozBoxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)',
+  WebkitBoxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)',
   boxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)'
 };
 

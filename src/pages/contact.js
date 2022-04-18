@@ -17,8 +17,8 @@ const linkStyles = {
   margin: 40,
   lineHeight: 1.7,
   background: 'rgba(255, 255, 255, 0.5)',
-  '-moz-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  '-webkit-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  MozBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  WebkitBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
   boxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
   color: '#334556'
 };
@@ -38,7 +38,9 @@ const ContactPage = () => {
           <br />
           Konzultációk helyszíne: Budapest 7. kerület, 11. kerület; online: google meet 💻
         </p>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div
+          style={{ display: 'flex', justifyContent: 'center', margin: '0 auto', maxWidth: '80vw' }}
+        >
           <iframe
             title='7ker'
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10781.364993681946!2d19.06462123554813!3d47.50274511273644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc64571d2f19%3A0x500c4290c1ed5a0!2sBudapest%2C%20District%20VII.%2C%20Hungary!5e0!3m2!1sen!2sde!4v1649069410539!5m2!1sen!2sde'

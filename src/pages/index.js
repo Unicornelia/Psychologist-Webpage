@@ -2,6 +2,7 @@ import * as React from 'react';
 import background from '../images/pastelshapes2.jpg';
 import Layout from '../components/Layout';
 import therapy from '../images/therapy2.jpg';
+import { isMobile, isTablet } from 'react-device-detect';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
@@ -15,8 +16,8 @@ const pageStyles = {
 
 const paragraphStyles = {
   background: 'rgba(255, 255, 255, 0.5)',
-  '-moz-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  '-webkit-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  MozBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  WebkitBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
   boxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
   fontSize: 18,
   fontWeight: 500,
@@ -46,7 +47,7 @@ const IndexPage = () => {
           Vallom, hogy minden kérdés jó, fontos és számít. Ezért kérem, írjon bátran üzenetet!
         </article>
         <img
-          style={{ border: '1px solid grey', display: 'flex', margin: '0 auto', maxWidth: '50%' }}
+          style={{ border: '1px solid grey', display: 'flex', margin: '0 auto', maxWidth: '70vw' }}
           src={therapy}
           alt='therapy'
         />

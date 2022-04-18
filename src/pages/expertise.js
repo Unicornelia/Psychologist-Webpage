@@ -17,8 +17,8 @@ const articleStyle = {
   margin: 40,
   lineHeight: 1.7,
   background: 'rgba(255, 255, 255, 0.5)',
-  '-moz-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  '-webkit-box-shadow': '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  MozBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
+  WebkitBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
   boxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)'
 };
 
