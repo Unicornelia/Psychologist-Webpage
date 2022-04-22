@@ -11,6 +11,7 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => (
   <header
     style={{
       display: 'flex',
+      flex: '1 auto',
       background: '#c1efe2',
       marginBottom: '1.45rem',
       margin: '0 auto',

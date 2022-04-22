@@ -2,6 +2,7 @@ import * as React from 'react';
 import Header from './Header';
 import './layout.css';
 import { FC } from 'react';
+import Footer from './Footer';
 
 type LayoutProps = {
   children: Node;
@@ -17,6 +18,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <Footer />
       </div>
     </>
   );
