@@ -30,11 +30,11 @@ const ContactPage = () => {
         <p style={linkStyles}>
           Kapcsolat:
           <br />
-          <a href='mailto:eszter.csaba@gmail.com'>Email: eszter.csaba@gmail.com</a>
+          Email: <a href='mailto:eszter.csaba@gmail.com'>eszter.csaba@gmail.com</a>
           <br />
           <a href='https://www.facebook.com/CsabaEszterPszichologus'>Facebook</a>
           <br />
-          <a href='https://www.instagram.com/csaba_eszter_pszichologus'>Instagramm</a>
+          <a href='https://www.instagram.com/csaba_eszter_pszichologus'>Instagram</a>
           <br />
           Konzultációk helyszíne: Budapest 7. kerület, 11. kerület; online: google meet 💻
         </p>

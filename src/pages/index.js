@@ -2,7 +2,6 @@ import * as React from 'react';
 import background from '../images/pastelshapes2.jpg';
 import Layout from '../components/Layout';
 import therapy from '../images/therapy2.jpg';
-import { isMobile, isTablet } from 'react-device-detect';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
