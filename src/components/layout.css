@@ -7,6 +7,10 @@ body {
   font-kerning: normal;
 }
 
+#gatsby-focus-wrapper {
+  display: inline;
+}
+
 a {
   text-decoration: none;
 }
