@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
 import background from '../images/pastelshapes2.jpg';
+import { articleStyles } from '../styles/sharedStyles';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
@@ -8,26 +9,15 @@ const pageStyles = {
   backgroundSize: 'cover',
   fontWeight: 500,
   padding: 40,
-  height: '100vh',
   margin: 0
-};
-
-const articleStyle = {
-  fontWeight: 500,
-  margin: 40,
-  lineHeight: 1.7,
-  background: 'rgba(255, 255, 255, 0.5)',
-  MozBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  WebkitBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  boxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)'
 };
 
 const ExpertisePage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-        <article style={articleStyle}>
-          <p>Amiben segíthetek:</p>
+        <article style={articleStyles}>
+          <span>Amiben segíthetek:</span>
           <p>
             A pszichológia csodásan sokszínű módszerei közül a család- és párterápiával, illetve a
             sématerápia eszközeivel dolgozom szívesen. Ezek az elméleti keretek és technikák

@@ -7,9 +7,8 @@ const pageStyles = {
   backgroundImage: `url(${background})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  fontWeight: 600,
+  fontWeight: 500,
   padding: 30,
-  height: '100%',
   margin: 0
 };
 
@@ -46,7 +45,7 @@ const IndexPage = () => {
           Vallom, hogy minden kérdés jó, fontos és számít. Ezért kérem, írjon bátran üzenetet!
         </article>
         <img
-          style={{ border: '1px solid grey', display: 'flex', margin: '0 auto', maxWidth: '70vw' }}
+          style={{ border: '1px solid grey', display: 'flex', margin: '0 auto', maxWidth: '60vw' }}
           src={therapy}
           alt='therapy'
         />

@@ -5,21 +5,21 @@ import { FC } from 'react';
 import Footer from './Footer';
 
 type LayoutProps = {
-  children: Node;
+  children: React.ReactNode;
+};
+
+const bodyStyle = {
+  display: 'grid',
+  margin: 0,
+  minHeight: '100vh'
 };
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header siteTitle='Csaba Eszter pszichológus' />
-      <div
-        style={{
-          margin: '0 auto'
-        }}
-      >
-        <main>{children}</main>
-        <Footer />
-      </div>
+      <main style={bodyStyle}>{children}</main>
+      <Footer />
     </>
   );
 };

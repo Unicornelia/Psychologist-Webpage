@@ -7,8 +7,8 @@ const pageStyles = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   padding: 40,
-  height: '100vh',
-  margin: 0
+  margin: 0,
+  textAlign: 'center'
 };
 
 const linkStyles = {
@@ -34,7 +34,7 @@ const BlogPage = () => {
           </a>
         </p>
         <iframe
-          style={{ width: '100%', height: '90vh' }}
+          style={{ width: '80vw', height: '80vh' }}
           title='blog'
           src='https://csabaeszter.wordpress.com/'
         />

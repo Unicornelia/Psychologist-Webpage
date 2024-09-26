@@ -2,6 +2,7 @@ import * as React from 'react';
 import Layout from '../components/Layout';
 import background from '../images/pastelshapes2.jpg';
 import profile from '../images/profil.jpg';
+import { articleStyles } from '../styles/sharedStyles';
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
@@ -9,18 +10,14 @@ const pageStyles = {
   backgroundSize: 'cover',
   fontWeight: 500,
   padding: 30,
-  height: '100%',
   margin: 0
 };
 
-const articleStyles = {
-  fontWeight: 500,
-  margin: 40,
-  lineHeight: 1.7,
-  background: 'rgba(255, 255, 255, 0.5)',
-  MozBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  WebkitBoxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)',
-  boxShadow: '0 0 0 10px rgba(255, 255, 255, 0.5)'
+const imageStyles = {
+  display: 'flex',
+  margin: '2rem auto',
+  maxWidth: '50vw',
+  border: '1px solid grey'
 };
 
 const AboutPage = () => {
@@ -28,11 +25,11 @@ const AboutPage = () => {
     <Layout>
       <main style={pageStyles}>
         <article style={articleStyles}>
-          <p>
+          <span>
             Csaba Eszter vagyok, pszichológus, tanár, edző. 2010-ben végeztem az Eötvös Loránd
             Tudományegyetemen. Módszerspecifikus képzésem a Magyar Családterápiás Egyesületnél,
             illetve a Nemzetközi Sématerápiás Egyesület kereteiben végzem.
-          </p>
+          </span>
           <p>
             Diplomáim kézhezvételét követően az állami ellátásban szereztem tapasztalatot gyerekek,
             felnőttek és családok pszichológiai támogatásával.
@@ -44,19 +41,13 @@ const AboutPage = () => {
           <p>
             Várom Budapesten szeretettel a választ-, támogatást kereső felnőtteket, családokat.
             Motivációm, hogy a hozzám fordulók képessé váljanak:
+            <ul>
+              <li>szükségleteik felismerésére, kifejezésére</li>
+              <li>az önmagukról való gondoskodásra.</li>
+            </ul>
           </p>
-          <ul>
-            <li>szükségleteik felismerésére, kifejezésére</li>
-            <li>az önmagukról való gondoskodásra.</li>
-          </ul>
-
           <img
-            style={{
-              display: 'flex',
-              margin: '0 auto',
-              maxWidth: '50vw',
-              border: '1px solid grey'
-            }}
+            style={imageStyles}
             src={profile}
             alt='profile'
           />

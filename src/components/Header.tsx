@@ -7,19 +7,17 @@ type HeaderProps = {
   siteTitle?: string;
 };
 
+const headerStyles = {
+  display: 'flex',
+  background: '#c1efe2',
+  padding: '1.5rem 2rem',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  // width: '100%'
+};
+
 const Header: FC<HeaderProps> = ({ siteTitle = '' }) => (
-  <header
-    style={{
-      display: 'flex',
-      flex: '1 auto',
-      background: '#c1efe2',
-      marginBottom: '1.45rem',
-      margin: '0 auto',
-      padding: '1.5rem 2rem',
-      alignItems: 'center',
-      justifyContent: 'space-between'
-    }}
-  >
+  <header style={headerStyles}>
     <h1 style={{ margin: 0 }}>
       <Link
         to='/'
