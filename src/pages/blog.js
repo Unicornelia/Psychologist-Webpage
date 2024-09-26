@@ -12,11 +12,10 @@ const pageStyles = {
 };
 
 const linkStyles = {
-  margin: '0 0 0 5px',
-  background: 'rgba(255, 255, 255, 0.5)',
-  MozBoxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)',
-  WebkitBoxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)',
-  boxShadow: '0 0 0 5px rgba(255, 255, 255, 0.5)'
+  color: '#334556',
+  fontWeight: 600,
+  fontSize: 18,
+  margin: '0 0 0 5px'
 };
 
 const BlogPage = () => {

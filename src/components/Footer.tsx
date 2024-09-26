@@ -8,7 +8,6 @@ const Footer = () => {
         backgroundColor: '#c1efe2',
         padding: '5px',
         position: 'relative',
-        // width: '100%'
       }}
     >
       © {new Date().getFullYear()}, Built with

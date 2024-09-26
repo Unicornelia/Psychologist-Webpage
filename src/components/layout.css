@@ -14,6 +14,6 @@ a {
 a:hover {
   z-index: 2;
   color: hsl(187, 55%, 19%);
-  text-shadow: -1px 0 1px hsl(180, 64%, 77%), 1px 0 1px rgba(0, 0, 0, 0.8);
+  text-shadow: -1px 0 1px hsl(180, 64%, 77%), 1px 0 1px rgba(0, 0, 0, 0.4);
 }
 

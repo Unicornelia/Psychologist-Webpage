@@ -26,13 +26,13 @@ const AboutPage = () => {
       <main style={pageStyles}>
         <article style={articleStyles}>
           <span>
-            Csaba Eszter vagyok, pszichológus, tanár, edző. 2010-ben végeztem az Eötvös Loránd
-            Tudományegyetemen. Módszerspecifikus képzésem a Magyar Családterápiás Egyesületnél,
+            Csaba Eszter vagyok, pszichológus, tanár és edző. Pszichológus végzettségem 2010-ben az Eötvös Loránd
+            Tudományegyetemen szereztem. Módszerspecifikus képzésem a Magyar Családterápiás Egyesületnél,
             illetve a Nemzetközi Sématerápiás Egyesület kereteiben végzem.
           </span>
           <p>
             Diplomáim kézhezvételét követően az állami ellátásban szereztem tapasztalatot gyerekek,
-            felnőttek és családok pszichológiai támogatásával.
+            felnőttek és családok pszichológiai támogatásával, szakszerű segítésével.
           </p>
           <p>
             A segítő szakmában eltöltött évek alatt szerzett gyakorlat, az eközben szélesedő-bővülő

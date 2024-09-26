@@ -13,7 +13,6 @@ const headerStyles = {
   padding: '1.5rem 2rem',
   alignItems: 'center',
   justifyContent: 'space-between',
-  // width: '100%'
 };
 
 const Header: FC<HeaderProps> = ({ siteTitle = '' }) => (

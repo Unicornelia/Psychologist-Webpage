@@ -1,7 +1,11 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
 import background from '../images/pastelshapes2.jpg';
-import { articleStyles } from '../styles/sharedStyles';
+import { articleStyles, LinkedIn } from '../styles/sharedStyles';
+import email from '../images/gmail.svg'
+import faceboook from '../images/facebook.svg'
+import insta from '../images/instagram.svg'
+import meet from '../images/meet.svg'
 
 const pageStyles = {
   backgroundImage: `url(${background})`,
@@ -23,33 +27,32 @@ const iframeStyles = {
   margin: '0 auto'
 };
 
+const iconStyles = { height: 40, width: 40, verticalAlign: 'middle', padding: '0 5px' };
+
 const ContactPage = () => {
   return (
     <Layout>
       <main style={pageStyles}>
         <article style={{ ...articleStyles, width: '70%', margin: '0 auto' }}>
-          <h3 style={{ margin: 0 }}>Kapcsolat:</h3>
+          <h3 style={{ margin: 0 }}>Kapcsolat</h3>
+          <p>Email: eszter.csaba@gmail.com</p>
           <p>Konzultációk helyszíne
             <ul style={{ margin: 5 }}>
               <li>Személyesen: Budapest 7. kerület, 11. kerület</li>
-              <li>Online: GoogleMeet 💻</li>
+              <li>Online: GoogleMeet <img style={iconStyles} src={meet} alt='GoogleMeet' /></li>
             </ul>
           </p>
-          <span>Email: <></>
+          <div style={{ display: 'flex', justifyContent: 'center', paddingTop: 20 }}>
             <a style={linkStyles} target='_blank' rel='noreferrer' href='mailto:eszter.csaba@gmail.com'>
-              eszter.csaba@gmail.com
+              <img style={iconStyles} src={email} alt='Email' title='eszter.csaba@gmail.com' />
             </a>
-          </span>
-          <p>
             <a style={linkStyles} target='_blank' rel='noreferrer' href='https://www.facebook.com/CsabaEszterPszichologus'>
-              Facebook
+              <img style={iconStyles} src={faceboook} alt='Facebook' />
             </a>
-          </p>
-          <p>
             <a style={linkStyles} target='_blank' rel='noreferrer' href='https://www.instagram.com/csaba_eszter_pszichologus'>
-              Instagram
+              <img style={iconStyles} src={insta} alt='Instagram' />
             </a>
-          </p>
+          </div>
         </article>
         <div style={iframeStyles}>
           <iframe

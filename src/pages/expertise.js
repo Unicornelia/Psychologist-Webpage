@@ -17,7 +17,7 @@ const ExpertisePage = () => {
     <Layout>
       <main style={pageStyles}>
         <article style={articleStyles}>
-          <span>Amiben segíthetek:</span>
+          <h3 style={{ margin: 0 }}>Amiben segíthetek</h3>
           <p>
             A pszichológia csodásan sokszínű módszerei közül a család- és párterápiával, illetve a
             sématerápia eszközeivel dolgozom szívesen. Ezek az elméleti keretek és technikák
