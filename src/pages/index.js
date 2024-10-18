@@ -29,7 +29,7 @@ const IndexPage = () => {
       <main style={pageStyles}>
         <article style={paragraphStyles}>
           <p>
-            Üdvözlöm a holnapomon! A jó élet egy folyamat, nem létező állapot. –mondja Carl Rogers,
+            Üdvözlöm a holnapomon! A jó élet egy folyamat, nem létező állapot –mondja Carl Rogers,
             a humanista pszichológia atyja.
           </p>
           <p>

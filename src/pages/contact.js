@@ -38,7 +38,7 @@ const ContactPage = () => {
           <p>Email: eszter.csaba@gmail.com</p>
           <p>Konzultációk helyszíne
             <ul style={{ margin: 5 }}>
-              <li>Személyesen: Budapest 7. kerület, 11. kerület</li>
+              <li>Személyesen: Budapest 11. kerület</li>
               <li>Online: GoogleMeet <img style={iconStyles} src={meet} alt='GoogleMeet' /></li>
             </ul>
           </p>
@@ -56,17 +56,9 @@ const ContactPage = () => {
         </article>
         <div style={iframeStyles}>
           <iframe
-            title='7ker'
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10781.364993681946!2d19.06462123554813!3d47.50274511273644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc64571d2f19%3A0x500c4290c1ed5a0!2sBudapest%2C%20District%20VII.%2C%20Hungary!5e0!3m2!1sen!2sde!4v1649069410539!5m2!1sen!2sde'
-            style={{ border: '1px solid grey', marginBottom: 30, width: '70vw', height: '50vh' }}
-            allowFullScreen=''
-            loading='lazy'
-            referrerPolicy='no-referrer-when-downgrade'
-          />
-          <iframe
             title='11ker'
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43161.8651686079!2d18.98370543207737!3d47.458413151868236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddec6463400b%3A0x500c4290c1ed5e0!2sBudapest%2C%20District%20XI.%2C%20Hungary!5e0!3m2!1sen!2sde!4v1649069485395!5m2!1sen!2sde'
-            style={{ border: '1px solid grey', width: '70vw', height: '50vh' }}
+            style={{ border: '1px solid grey', width: '70vw', height: '70vh' }}
             allowFullScreen=''
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
