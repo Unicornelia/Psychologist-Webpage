@@ -13,6 +13,17 @@ const StyledArticle = styled.article`
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    text-align: start;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+    width: 85%;
+    text-align: start;
+  }
 `;
 
 interface ArticleProps {
