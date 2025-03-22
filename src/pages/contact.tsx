@@ -27,20 +27,61 @@ const ContactMain = styled.main`
 const StyledLink = styled.a`
   color: ${theme.colors.primaryText};
   text-decoration: none;
+  position: relative;
+  display: inline-block;
 `;
 
 const IframeWrapper = styled.div`
   padding: 30px;
   display: grid;
   justify-content: center;
-  margin: '0 auto';
+  margin: 0 auto;
+`;
+
+const IconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Added spacing */
+  padding-top: 20px;
+`;
+
+const IconWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
 `;
 
 const Icon = styled.img`
   height: 40px;
   width: 40px;
   vertical-align: middle;
-  padding: 0 5px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+const Tooltip = styled.div`
+  visibility: hidden;
+  background: ${theme.colors.gradientBackground};
+  color: ${theme.colors.primaryText};
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 14px;
 `;
 
 const ContactPage = () => {
@@ -59,25 +100,34 @@ const ContactPage = () => {
               </li>
             </ul>
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center', paddingTop: 20 }}>
+          <IconContainer>
             <StyledLink target='_blank' rel='noreferrer' href='mailto:eszter.csaba@gmail.com'>
-              <Icon src={email} alt='Email' title='eszter.csaba@gmail.com' />
+              <IconWrapper>
+                <Icon src={email} alt='Email' />
+                <Tooltip className='tooltip'>Email Csaba Eszter</Tooltip>
+              </IconWrapper>
             </StyledLink>
             <StyledLink
               target='_blank'
               rel='noreferrer'
               href='https://www.facebook.com/CsabaEszterPszichologus'
             >
-              <Icon src={facebook} alt='Facebook' />
+              <IconWrapper>
+                <Icon src={facebook} alt='Facebook' />
+                <Tooltip className='tooltip'>Visit Facebook</Tooltip>
+              </IconWrapper>
             </StyledLink>
             <StyledLink
               target='_blank'
               rel='noreferrer'
               href='https://www.instagram.com/csaba_eszter_pszichologus'
             >
-              <Icon src={insta} alt='Instagram' />
+              <IconWrapper>
+                <Icon src={insta} alt='Instagram' />
+                <Tooltip className='tooltip'>Follow on Instagram</Tooltip>
+              </IconWrapper>
             </StyledLink>
-          </div>
+          </IconContainer>
         </Article>
         <IframeWrapper>
           <iframe
