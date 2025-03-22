@@ -11,6 +11,7 @@
   &:hover {
     color: ${i.A.colors.hover};
     transform: scale(1.05);
+    text-shadow: 2px 2px 8px rgb(56, 161, 158);
   }
 `,f=s.Ay.ul`
   display: flex;
@@ -35,6 +36,7 @@
   &:hover {
     color: ${i.A.colors.hover};
     transform: scale(1.05);
+    text-shadow: 2px 2px 8px rgb(56, 161, 158);
   }
 `;var g=e=>{let{siteTitle:t=""}=e;return(0,l.Y)(m,null,(0,l.Y)(h,{to:"/"},t),(0,l.Y)(p,null))};const v=s.Ay.footer`
   font-size: ${i.A.fontSizes.xs};
@@ -46,4 +48,4 @@
   margin: 0;
   min-height: '100vh';
 `;var x=e=>{let{children:t}=e;return(0,l.Y)(s.NP,{theme:i.A},(0,l.Y)(g,{siteTitle:"Csaba Eszter pszichológus"}),(0,l.Y)(b,null,t),(0,l.Y)(y,null))}},2023:function(e,t){"use strict";t.A={fontSizes:{xs:"12px",sm:"14px",md:"14px",lg:"16px",xl:"18px"},colors:{primary:"white",primaryText:"#1f6481",hover:"#266e85",background:"#c1efe2",gradientBackground:"linear-gradient(to right, #73deb6, #c1efe2)"},spacings:{},bp:{mobileS:"max-width: 330px",mobileM:"max-width: 400px",mobileL:"max-width: 480px",tabletS:"max-width: 600px",tabletL:"max-width: 768px",desktopXS:"max-width: 900px",desktopS:"max-width: 1080px",desktopM:"max-width: 1200px",desktopL:"max-width: 1400px"}}}}]);
-//# sourceMappingURL=commons-cd0bd05adb69b7fcdc18.js.map
+//# sourceMappingURL=commons-1512a14654685cb97f3d.js.map

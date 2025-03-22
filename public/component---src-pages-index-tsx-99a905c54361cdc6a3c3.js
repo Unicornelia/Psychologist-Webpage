@@ -5,6 +5,7 @@
   line-height: 1.7;
   text-align: justify;
   width: 70%;
+  border-radius: 1px;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
@@ -30,4 +31,4 @@
   max-width: 600px;
   height: auto;
 `;var p=()=>(0,o.Y)(r.A,null,(0,o.Y)(g,null,(0,o.Y)(i.A,null,(0,o.Y)("p",null,"Üdvözlöm a holnapomon! A jó élet egy folyamat, nem létező állapot –mondja Carl Rogers, a humanista pszichológia atyja."),(0,o.Y)("p",null,"Ezzel üzeni nekünk, hogy a növekedés, az önmegvalósítás nem egy egyszeri célon alapuló statikus állapot."),(0,o.Y)("p",null,"A fejlődés maga az út, és a “jó élet” törekvés a fejlődésre. Amennyiben segítő szakembert keres, aki partnerközpontú szemléletben kíséri, hogy megtalálja a kérdésére a saját válaszait, kíséri a fejlődése útján, és kíséri abban, hogy megtanulja saját szükségleteit felismerni és betölteni, jó helyen jár."),"Vallom, hogy minden kérdés jó, fontos és számít. Ezért kérem, írjon bátran üzenetet!"),(0,o.Y)(d,{src:s,alt:"therapy"})))},4037:function(e,a,t){a.A=t.p+"static/pastelshapes2-d29772ce87badbda90f403f5b599091c.jpg"}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-f05ff87eec161fb8fdcf.js.map
+//# sourceMappingURL=component---src-pages-index-tsx-99a905c54361cdc6a3c3.js.map
