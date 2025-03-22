@@ -19,11 +19,10 @@ const ExpertisePage = () => {
         <article style={articleStyles}>
           <h3 style={{ margin: 0 }}>Amiben segíthetek</h3>
           <p>
-            A pszichológia csodásan sokszínű módszerei közül a család- és párterápiával, illetve a
-            sématerápia eszközeivel dolgozom szívesen. Ezek az elméleti keretek és technikák
-            tapasztalataim szerint remek alapot adnak az önismereti elmélyüléshez és fejlődéshez.
-            Ezáltal pedig a mindennapi kérdéseink, nehézségeink feloldásához, konstruktív
-            változtatásokhoz.
+            A pszichológia csodásan sokszínű módszerei közül a sématerápiával és a sématerápia
+            eszközeivel dolgozom szívesen. Ezek az elméleti keretek és technikák tapasztalataim
+            szerint remek alapot adnak az önismereti elmélyüléshez és fejlődéshez. Ezáltal pedig a
+            mindennapi kérdéseink, nehézségeink feloldásához, konstruktív változtatásokhoz.
           </p>
           <p>
             Személyesen Budapesten, illetve online várom a támogatást kereső családokat, párokat,
@@ -42,7 +41,7 @@ const ExpertisePage = () => {
           <p>Konzultációk ára:</p>
           <ul>
             <li>egyéni pszichológiai konzultáció: 12000ft / 50perc</li>
-            <li>páros-, vagy családi pszichológiai konzultáció: 22000ft / 90perc</li>
+            <li>párkapcsolati pszichológiai konzultáció: 22000ft / 90perc</li>
           </ul>
         </article>
       </main>
