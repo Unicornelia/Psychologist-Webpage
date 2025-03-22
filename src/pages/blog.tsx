@@ -3,12 +3,9 @@ import Layout from '../components/Layout';
 import background from '../images/pastelshapes2.jpg';
 import styled from 'styled-components';
 import theme from '../styles/theme';
+import BackgroundImage from '../components/BackgroundImage';
 
 const BlogMain = styled.main`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-weight: 500;
   margin: 0;
   min-height: 100vh;
@@ -43,6 +40,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <BlogMain>
+        <BackgroundImage />
         <StyledLink target='_blank' href='https://csabaeszter.wordpress.com/' rel='noreferrer'>
           Blog megtekintése eredeti oldalon
         </StyledLink>

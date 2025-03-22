@@ -1,15 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import background from '../images/pastelshapes2.jpg';
 import Layout from '../components/Layout';
 import therapy from '../images/therapy2.jpg';
 import Article from '../components/Article';
+import BackgroundImage from '../components/BackgroundImage';
 
 const Main = styled.main`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-weight: 500;
   margin: 0;
   min-height: 100vh;
@@ -18,6 +14,7 @@ const Main = styled.main`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 `;
 
 const StyledImage = styled.img`
@@ -33,6 +30,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Main>
+        <BackgroundImage />
         <Article>
           <p>
             Üdvözlöm a holnapomon! A jó élet egy folyamat, nem létező állapot –mondja Carl Rogers, a

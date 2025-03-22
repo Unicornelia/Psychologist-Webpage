@@ -1,15 +1,11 @@
 import React, { FC } from 'react';
 import Layout from '../components/Layout';
-import background from '../images/pastelshapes2.jpg';
 import profile from '../images/profil.jpg';
 import Article from '../components/Article';
 import styled from 'styled-components';
+import BackgroundImage from '../components/BackgroundImage';
 
 const AboutMain = styled.main`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-weight: 500;
   margin: 0;
   min-height: 100vh;
@@ -32,6 +28,7 @@ const AboutPage: FC = () => {
   return (
     <Layout>
       <AboutMain>
+        <BackgroundImage />
         <Article>
           <span>
             Csaba Eszter vagyok, pszichológus, tanár és edző. Pszichológus végzettségem 2010-ben az

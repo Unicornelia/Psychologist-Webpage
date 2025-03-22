@@ -1,14 +1,10 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import background from '../images/pastelshapes2.jpg';
 import Article from '../components/Article';
 import styled from 'styled-components';
+import BackgroundImage from '../components/BackgroundImage';
 
 const ExpertMain = styled.main`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-weight: 500;
   margin: 0;
   min-height: 100vh;
@@ -23,6 +19,7 @@ const ExpertisePage = () => {
   return (
     <Layout>
       <ExpertMain>
+        <BackgroundImage />
         <Article>
           <h3 style={{ margin: 0 }}>Amiben segíthetek</h3>
           <p>

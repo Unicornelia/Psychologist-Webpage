@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import background from '../images/pastelshapes2.jpg';
 import email from '../images/gmbw.svg';
 import facebook from '../images/fbbw.svg';
 import insta from '../images/instabw.svg';
@@ -8,12 +7,9 @@ import meet from '../images/meet.svg';
 import Article from '../components/Article';
 import styled from 'styled-components';
 import theme from '../styles/theme';
+import BackgroundImage from '../components/BackgroundImage';
 
 const ContactMain = styled.main`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-weight: 500;
   margin: 0;
   min-height: 100vh;
@@ -88,6 +84,7 @@ const ContactPage = () => {
   return (
     <Layout>
       <ContactMain>
+        <BackgroundImage />
         <Article>
           <h3 style={{ margin: 0 }}>Kapcsolat</h3>
           <p>Email: eszter.csaba@gmail.com</p>
