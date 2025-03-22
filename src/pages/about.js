@@ -26,9 +26,10 @@ const AboutPage = () => {
       <main style={pageStyles}>
         <article style={articleStyles}>
           <span>
-            Csaba Eszter vagyok, pszichológus, tanár és edző. Pszichológus végzettségem 2010-ben az Eötvös Loránd
-            Tudományegyetemen szereztem. Módszerspecifikus képzésem a Magyar Családterápiás Egyesületnél,
-            illetve a Nemzetközi Sématerápiás Egyesület kereteiben végzem.
+            Csaba Eszter vagyok, pszichológus, tanár és edző. Pszichológus végzettségem 2010-ben az
+            Eötvös Loránd Tudományegyetemen szereztem. Módszerspecifikus képzésem a Magyar
+            Családterápiás Egyesületnél, illetve a Nemzetközi Sématerápiás Egyesület kereteiben
+            végzem.
           </span>
           <p>
             Diplomáim kézhezvételét követően az állami ellátásban szereztem tapasztalatot gyerekek,
@@ -46,11 +47,7 @@ const AboutPage = () => {
               <li>az önmagukról való gondoskodásra.</li>
             </ul>
           </p>
-          <img
-            style={imageStyles}
-            src={profile}
-            alt='profile'
-          />
+          <img style={imageStyles} src={profile} alt='profile' />
         </article>
       </main>
     </Layout>
