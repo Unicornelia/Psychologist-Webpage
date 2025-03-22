@@ -21,7 +21,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header siteTitle='Csaba Eszter pszichológus' />
-      <Container>{children}</Container>
+      <Container id='outer-container'>{children}</Container>
       <Footer />
     </ThemeProvider>
   );

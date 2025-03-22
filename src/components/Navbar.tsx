@@ -88,7 +88,7 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       {isSmallDevice ? (
-        <Menu styles={menuStyles} right>
+        <Menu styles={menuStyles} right outerContainerId='' pageWrapId=''>
           <StyledLink to='/about/'>Bemutatkozás</StyledLink>
           <StyledLink to='/expertise/'>Amiben segíthetek</StyledLink>
           <StyledLink to='/contact/'>Kapcsolat</StyledLink>
