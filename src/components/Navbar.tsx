@@ -1,111 +1,108 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import { fallDown as Menu } from 'react-burger-menu';
-import { useEffect, useState } from 'react';
+import styled from 'styled-components';
+import theme from '../styles/theme';
 
-const navbarStyles = {
-  color: '#16454b',
-  textDecoration: 'none',
-  listStyle: 'none',
-  listStyleType: 'none',
-  padding: '0 20px'
-};
+const NavbarContainer = styled.nav`
+  position: relative;
+`;
 
-const fullMenuStyles = {
-  display: 'flex',
-  alignContent: 'flex-end',
-  justifyContent: 'space-around',
-  listStyleType: 'none'
-};
+const StyledLink = styled(Link)`
+  color: ${theme.colors.primaryText};
+  text-decoration: none;
+  font-size: ${theme.fontSizes.xl};
+  font-weight: 600;
+  padding: 12px 20px;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+
+  &:hover {
+    color: ${theme.colors.hover};
+    transform: scale(1.05);
+    text-shadow: 2px 2px 8px rgb(56, 161, 158);
+  }
+`;
+
+const DesktopMenu = styled.ul`
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px 20px;
+  background: transparent;
+`;
 
 const menuStyles = {
+  bmMenuWrap: {
+    position: 'fixed',
+    width: 'min-content',
+    height: '100%',
+    top: '0'
+  },
+  bmMenu: {
+    backdropFilter: 'blur(5px)',
+    padding: '2rem',
+    fontSize: '1.2rem',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem',
+    alignItems: 'center'
+  },
+  bmItemList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.5rem',
+    padding: '0'
+  },
+  bmItem: {
+    textAlign: 'center'
+  },
   bmBurgerButton: {
     position: 'fixed',
     width: '30px',
     height: '20px',
-    justifyContent: 'center',
     right: '26px',
     top: '26px'
   },
   bmBurgerBars: {
-    background: '#373a47'
+    background: '#1f6481'
   },
   bmCrossButton: {
-    height: '26px',
-    width: '26px'
+    height: '30px',
+    width: '30px'
   },
   bmCross: {
-    background: '#bdc3c7'
-  },
-  bmMenuWrap: {
-    position: 'sticky',
-    right: '10px',
-    height: '100%',
-    width: 'fit-content'
-  },
-  bmMenu: {
-    color: '#c1efe2',
-    padding: '1.5em 0.5em 1em',
-    fontSize: '1.15em',
-    height: '30%'
-  },
-  bmMorphShape: {
-    fill: '#373a47'
-  },
-  bmItemList: {
-    color: '#b8b7ad',
-    padding: '1em'
-  },
-  bmItem: {
-    display: 'flex'
-  },
-  bmOverlay: {
-    background: 'none'
+    background: '#1f6481'
   }
 };
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
   const [isSmallDevice, setIsSmallDevice] = useState(false);
 
   useEffect(() => {
-    setIsSmallDevice(document.body.clientWidth < 960);
+    const checkDeviceSize = () => setIsSmallDevice(window.innerWidth < 960);
+    checkDeviceSize();
+    window.addEventListener('resize', checkDeviceSize);
+    return () => window.removeEventListener('resize', checkDeviceSize);
   }, []);
 
-  const handleClick = () => {
-    setOpen(!open);
-  };
-
-  return isSmallDevice ? (
-    <Menu styles={menuStyles} isOpen={open} onOpen={handleClick} noOverlay>
-      <Link id='about' to='/about/' style={navbarStyles}>
-        Bemutatkozás
-      </Link>
-      <Link id='expertise' to='/expertise/' style={navbarStyles}>
-        Amiben segíthetek
-      </Link>
-      <Link id='contact' to='/contact/' style={navbarStyles}>
-        Kapcsolat
-      </Link>
-      <Link id='blog' to='/blog/' style={navbarStyles}>
-        Blog
-      </Link>
-    </Menu>
-  ) : (
-    <ul style={fullMenuStyles}>
-      <Link id='about' to='/about/' style={navbarStyles}>
-        Bemutatkozás
-      </Link>
-      <Link id='expertise' to='/expertise/' style={navbarStyles}>
-        Amiben segíthetek
-      </Link>
-      <Link id='contact' to='/contact/' style={navbarStyles}>
-        Kapcsolat
-      </Link>
-      <Link id='blog' to='/blog/' style={navbarStyles}>
-        Blog
-      </Link>
-    </ul>
+  return (
+    <NavbarContainer>
+      {isSmallDevice ? (
+        <Menu styles={menuStyles} right>
+          <StyledLink to='/about/'>Bemutatkozás</StyledLink>
+          <StyledLink to='/expertise/'>Amiben segíthetek</StyledLink>
+          <StyledLink to='/contact/'>Kapcsolat</StyledLink>
+          <StyledLink to='/blog/'>Blog</StyledLink>
+        </Menu>
+      ) : (
+        <DesktopMenu>
+          <StyledLink to='/about/'>Bemutatkozás</StyledLink>
+          <StyledLink to='/expertise/'>Amiben segíthetek</StyledLink>
+          <StyledLink to='/contact/'>Kapcsolat</StyledLink>
+          <StyledLink to='/blog/'>Blog</StyledLink>
+        </DesktopMenu>
+      )}
+    </NavbarContainer>
   );
 };
 

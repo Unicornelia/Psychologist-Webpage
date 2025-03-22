@@ -1,21 +1,23 @@
-import * as React from 'react';
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import theme from '../styles/theme';
 
-const Footer = () => {
+const StyledFooter = styled.footer`
+  font-size: ${theme.fontSizes.xs};
+  background-color: ${theme.colors.background};
+  padding: 5px;
+  position: relative;
+`;
+
+const Footer: FC = () => {
   return (
-    <footer
-      style={{
-        fontSize: 12,
-        backgroundColor: '#c1efe2',
-        padding: '5px',
-        position: 'relative',
-      }}
-    >
+    <StyledFooter>
       © {new Date().getFullYear()}, Built with
       <a href='https://www.gatsbyjs.com'> Gatsby</a> by{' '}
       <a target='_blank' href='https://github.com/Unicornelia' rel='noreferrer'>
         Unicornelia
       </a>
-    </footer>
+    </StyledFooter>
   );
 };
 
