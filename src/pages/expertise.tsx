@@ -26,7 +26,7 @@ const ExpertisePage = () => {
         <Article>
           <h3 style={{ margin: 0 }}>Amiben segíthetek</h3>
           <p>
-            A pszichológia csodásan sokszínű módszerei közül a sématerápiával és a sématerápia
+            A pszichológia csodásan sokszínű módszerei közül a sématerápia és a sémapárterápia
             eszközeivel dolgozom szívesen. Ezek az elméleti keretek és technikák tapasztalataim
             szerint remek alapot adnak az önismereti elmélyüléshez és fejlődéshez. Ezáltal pedig a
             mindennapi kérdéseink, nehézségeink feloldásához, konstruktív változtatásokhoz.
