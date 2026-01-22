@@ -44,8 +44,8 @@ const ExpertisePage = () => {
           <br />
           <p>Konzultációk ára:</p>
           <ul>
-            <li>egyéni pszichológiai konzultáció: 12000ft / 50perc</li>
-            <li>párkapcsolati pszichológiai konzultáció: 22000ft / 90perc</li>
+            <li>egyéni pszichológiai konzultáció: 12000ft / 50perc (2026 április 1-től 15000ft / 50 perc)</li>
+            <li>párkapcsolati pszichológiai konzultáció: 22000ft / 90perc (2026 április 1-től 25000ft / 50 perc)</li>
           </ul>
         </Article>
       </ExpertMain>
