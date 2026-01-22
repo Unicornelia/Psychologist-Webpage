@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
 const Footer: FC = () => {
   return (
     <StyledFooter>
-      © {new Date().getFullYear()}, Built with
+      © Built with
       <a href='https://www.gatsbyjs.com'> Gatsby</a> by{' '}
       <a target='_blank' href='https://github.com/Unicornelia' rel='noreferrer'>
         Unicornelia
