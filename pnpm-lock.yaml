@@ -26,6 +26,9 @@ importers:
       gatsby-plugin-image:
         specifier: ^3.16.0
         version: 3.16.0(@babel/core@7.29.0)(gatsby-plugin-sharp@5.16.0(gatsby@5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0))(gatsby-source-filesystem@5.16.0(gatsby@5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3)))(gatsby@5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      gatsby-plugin-netlify:
+        specifier: ^5.1.1
+        version: 5.1.1(gatsby@5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(webpack@5.98.0)
       gatsby-plugin-sharp:
         specifier: ^5.16.0
         version: 5.16.0(gatsby@5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0)
@@ -3343,6 +3346,12 @@ packages:
       gatsby-source-filesystem:
         optional: true
 
+  gatsby-plugin-netlify@5.1.1:
+    resolution: {integrity: sha512-CembvYjbP7NJvVIdffqWaBKXMHIxYBKBEoXFGvCKX+8phRNkfmjnvoljoOakv0ypHBpgjgtpa7Nvc3PI+IjB1A==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      gatsby: ^4.0.0 || ^5.0.0
+
   gatsby-plugin-page-creator@5.16.0:
     resolution: {integrity: sha512-SkKb7X/8A+C1bhhw/tEDPSTr8AcsTc526OisIu8fHlxLKUQ2jY7ppsvY2PimwtSCdX6euNdDafWWlfpy5XSSFA==}
     engines: {node: '>=18.0.0 <26'}
@@ -4010,6 +4019,9 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
+  kebab-hash@0.1.2:
+    resolution: {integrity: sha512-BTZpq3xgISmQmAVzkISy4eUutsUA7s4IEFlCwOBJjvSFOwyR7I+fza+tBc/rzYWK/NrmFHjfU1IhO3lu29Ib/w==}
+
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
@@ -4083,6 +4095,9 @@ packages:
   lock@1.1.0:
     resolution: {integrity: sha512-NZQIJJL5Rb9lMJ0Yl1JoVr9GSdo4HTPsUEWsSFzB8dE8DSoiLCVavWZPi7Rnlv/o73u6I24S/XYc/NmG4l8EKA==}
 
+  lockfile@1.0.4:
+    resolution: {integrity: sha512-cvbTwETRfsFh4nHsL1eGWapU1XFi5Ot9E85sWAwia7Y7EgB7vfqcZhTKZ+l7hCGxSPoushMv5GKhT5PdLv03WA==}
+
   lodash.clonedeep@4.5.0:
     resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
 
@@ -4101,6 +4116,16 @@ packages:
   lodash.foreach@4.5.0:
     resolution: {integrity: sha512-aEXTF4d+m05rVOAUG3z4vZZ4xVexLKZGF0lIxuHZ1Hplpk/3B6Z1+/ICICYRLm7c41Z2xiejbkCkJoTlypoXhQ==}
 
+  lodash.get@4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
+
+  lodash.has@4.5.2:
+    resolution: {integrity: sha512-rnYUdIo6xRCJnQmbVFEwcxF144erlD+M3YcJUVesflU9paQaE8p+fJDcIQrlMYbxoANFL+AB9hZrzSBBk5PL+g==}
+
+  lodash.kebabcase@4.1.1:
+    resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
+
   lodash.map@4.6.0:
     resolution: {integrity: sha512-worNHGKLDetmcEYDvh2stPCrrQRkP20E4l0iIS7F8EvzMqBBi7ltvFN5m1HvTf1P7Jk1txKhvFcmYsCr8O2F1Q==}
 
@@ -4112,6 +4137,9 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+
+  lodash.mergewith@4.6.2:
+    resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
 
   lodash.truncate@4.4.2:
     resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
@@ -5871,6 +5899,12 @@ packages:
 
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+
+  webpack-assets-manifest@5.2.1:
+    resolution: {integrity: sha512-MsEcXVio1GY6R+b4dVfTHIDMB0RB90KajQG8neRbH92vE2S1ClGw9mNa9NPlratYBvZOhExmN0qqMNFTaCTuIg==}
+    engines: {node: '>=10.13.0'}
+    peerDependencies:
+      webpack: ^5.2.0
 
   webpack-dev-middleware@5.3.4:
     resolution: {integrity: sha512-BVdTqhhs+0IfoeAf7EoH5WE+exCmqGerHfDM0IL096Px60Tq2Mn9MAbnaGUe6HiMa41KMCYF19gyzZmBcq/o4Q==}
@@ -10356,6 +10390,18 @@ snapshots:
       - react-native-b4a
       - supports-color
 
+  gatsby-plugin-netlify@5.1.1(gatsby@5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(webpack@5.98.0):
+    dependencies:
+      '@babel/runtime': 7.28.6
+      fs-extra: 11.3.3
+      gatsby: 5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3)
+      gatsby-core-utils: 4.16.0
+      kebab-hash: 0.1.2
+      lodash.mergewith: 4.6.2
+      webpack-assets-manifest: 5.2.1(webpack@5.98.0)
+    transitivePeerDependencies:
+      - webpack
+
   gatsby-plugin-page-creator@5.16.0(gatsby@5.16.0(babel-eslint@10.1.0(eslint@9.39.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0):
     dependencies:
       '@babel/runtime': 7.28.6
@@ -11290,6 +11336,10 @@ snapshots:
       object.assign: 4.1.7
       object.values: 1.2.1
 
+  kebab-hash@0.1.2:
+    dependencies:
+      lodash.kebabcase: 4.1.1
+
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
@@ -11376,6 +11426,10 @@ snapshots:
 
   lock@1.1.0: {}
 
+  lockfile@1.0.4:
+    dependencies:
+      signal-exit: 3.0.7
+
   lodash.clonedeep@4.5.0: {}
 
   lodash.debounce@4.0.8: {}
@@ -11388,6 +11442,12 @@ snapshots:
 
   lodash.foreach@4.5.0: {}
 
+  lodash.get@4.4.2: {}
+
+  lodash.has@4.5.2: {}
+
+  lodash.kebabcase@4.1.1: {}
+
   lodash.map@4.6.0: {}
 
   lodash.maxby@4.6.0: {}
@@ -11395,6 +11455,8 @@ snapshots:
   lodash.memoize@4.1.2: {}
 
   lodash.merge@4.6.2: {}
+
+  lodash.mergewith@4.6.2: {}
 
   lodash.truncate@4.4.2: {}
 
@@ -13242,6 +13304,17 @@ snapshots:
   web-vitals@1.1.2: {}
 
   webidl-conversions@3.0.1: {}
+
+  webpack-assets-manifest@5.2.1(webpack@5.98.0):
+    dependencies:
+      chalk: 4.1.2
+      deepmerge: 4.3.1
+      lockfile: 1.0.4
+      lodash.get: 4.4.2
+      lodash.has: 4.5.2
+      schema-utils: 3.3.0
+      tapable: 2.3.0
+      webpack: 5.98.0
 
   webpack-dev-middleware@5.3.4(webpack@5.98.0):
     dependencies:
