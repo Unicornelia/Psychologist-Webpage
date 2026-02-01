@@ -11,10 +11,13 @@ const NavbarContainer = styled.nav`
 const StyledLink = styled(Link)`
   color: ${theme.colors.primaryText};
   text-decoration: none;
+  text-wrap: nowrap;
   font-size: ${theme.fontSizes.xl};
   font-weight: 600;
   padding: 12px 20px;
-  transition: color 0.3s ease, transform 0.2s ease-in-out;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease-in-out;
 
   &:hover {
     color: ${theme.colors.hover};

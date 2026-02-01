@@ -4,17 +4,15 @@ import Layout from '../components/Layout';
 
 const Styled404 = styled.div`
   text-align: center;
+  height: 100vh;
   padding: 50px;
   h1 {
     font-size: 2rem;
-    color: var(--green);
   }
   p {
     font-size: 1.2rem;
-    color: var(--slate);
   }
   a {
-    color: var(--green);
     text-decoration: none;
     font-weight: bold;
   }
