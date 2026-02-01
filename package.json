@@ -16,10 +16,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
     "gatsby": "^5.16.0",
-    "gatsby-plugin-emotion": "^8.16.0",
     "gatsby-plugin-google-analytics": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-netlify": "^5.1.1",
