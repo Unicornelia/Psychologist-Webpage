@@ -32,7 +32,6 @@
     "react-burger-menu": "^3.1.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "^19.2.4",
-    "react-intersection-observer": "^10.0.2",
     "styled-components": "^6.3.8"
   },
   "devDependencies": {
