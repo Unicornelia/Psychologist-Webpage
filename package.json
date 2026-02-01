@@ -14,7 +14,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "build:netlify": "rm -rf .cache node_modules public && pnpm i && gatsby build"
+    "build:netlify": "gatsby clean && gatsby build"
   },
   "dependencies": {
     "gatsby": "^5.16.0",
@@ -51,6 +51,13 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "core-js",
+      "core-js-pure",
+      "es5-ext",
+      "gatsby-cli",
+      "lmdb",
+      "msgpackr-extract",
       "gatsby",
       "sharp"
     ]
